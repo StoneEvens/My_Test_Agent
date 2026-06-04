@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "id": "agent:my-first-agent",
+  "name": "My First AI Agent",
+  "description": "A sealed oracle agent that executes licensed tasks through the on-chain registry.",
+  "version": "1.0.0",
+  "runtime": "sealed-oracle-v1",
+  "entrypoint": "run",
+  "instructions": "Process user requests according to the licensed usage policy and return results as a secure oracle response.",
+  "configuration": {
+    "temperature": 0.8,
+    "maxTokens": 16384,
+    "timeoutSeconds": 30
+  },
+  "execution": {
+    "type": "openai_responses",
+    "url": "https://api.openai.com/v1/responses",
+    "model": "gpt-4o",
+    "authMode": "user_bearer"
+  },
+  "metadata": {
+    "creator": "0xDe8aC5755B7F873A9A1a83ec1aBA4Fa603574a0D",
+    "repository": "https://github.com/StoneEvens/My_First_Agent",
+    "license": "usage-licensed",
+    "contact": "support@example.com"
+  }
+}
