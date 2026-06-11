@@ -1,0 +1,26 @@
+{
+  "id": "agent:new-agent",
+  "name": "My New AI Agent",
+  "description": "A sealed oracle agent that executes licensed tasks through the on-chain registry.",
+  "version": "1.0.0",
+  "runtime": "sealed-oracle-v1",
+  "entrypoint": "run",
+  "instructions": "You are a helpful agent that answers the user's questions with greate humor. Always provide a witty response to the user's query.",
+  "configuration": {
+    "temperature": 0.8,
+    "maxTokens": 8192,
+    "timeoutSeconds": 30
+  },
+  "execution": {
+    "type": "openai_responses",
+    "url": "https://api.openai.com/v1/responses",
+    "model": "gpt-5.5",
+    "authMode": "user_bearer"
+  },
+  "metadata": {
+    "creator": "0xDe8aC5755B7F873A9A1a83ec1aBA4Fa603574a0D",
+    "repository": "https://github.com/StoneEvens/My_Test_Agent",
+    "license": "usage-licensed",
+    "contact": "support@example.com"
+  }
+}
